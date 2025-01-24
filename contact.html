@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="RESUME">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body class = "contact-background">
+    <!--Navigator-->
+    <header class="header">
+        <div class="nav-box">
+            <span>Click here to download my resume :D</span>
+            <ul class="nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="project.html">MY PROJECTS</a></li>
+                <li><a href="concat.html" class="on">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Navigator end-->
+    <!--banner-->
+    <!--banner end-->
+    <!--Self Introduction-->
+    <div class="contact-introduce-tit">
+        <span class = "contact-introduce-typing">CONTACT INFORMATION</span>
+    </div>
+    <div class="contact-introduce">
+        <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.921395998204!2d-79.86629592457716!3d43.25306917112397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b14e8d2fbbb%3A0x7907e9aa63a45a6e!2z6IOh5qGD6KGXNDnlj7c!5e0!3m2!1szh-CN!2sca!4v1737517557910!5m2!1szh-CN!2sca" allowfullscreen="" loading="lazy" referrerpolicy= "no-referrer-when-downgrade"></iframe>
+        <div class="contact-introduce-main">
+            <div class="r">
+                <p id="phone">Phone(mobile): <span onclick="copyText('phone')">(+1) 902-314-2543</span></p>
+                <p id="email-school">E-mail(school): <span onclick="copyText('email-school')">li2896@mcmaster.ca</span></p>
+                <p id="email-personal">E-mail(personal): <span onclick="copyText('email-personal')">lichuchen77@gmail.com</span></p>
+                <p id="address">Address: <span onclick="copyText('address')">703 49 Walnut St South, Hamilton, ON, L8N 2K9</span></p>
+            </div>                  
+        </div>
+        <!--Contact Sheet-->
+        <form class="myform" method="post" action="#">
+            <p class = "get-in-touch">Get in touch</p>
+            <div class="inp-box">
+                <textarea class="msg" name="message" placeholder="Enter your message here... *"></textarea>
+            </div>
+            <div class="inp-box">
+                <input type="text" name="name" class="inp" placeholder="Enter your name *"/>
+                <input type="email" name="email" class="inp" placeholder="Enter your e-mail address *"/>
+            </div>
+            <div class="inp-box">
+                <input type="text" name="subject" class="inp" placeholder="Enter your subject *"/> 
+            </div>
+            <div class="contact-button-errormgs"></div>
+            <button class="contact-button" type="button" onclick="validateForm()">Submit</button>
+        </form>
+        
+        <!--Contact Sheet end-->
+
+
+
+    </div>
+    <!--Self Introduction end-->
+
+    <div class="foot-box">
+        Copyright © 2025. Chuchen Li. All rights reserved.
+    </div>
+
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>
