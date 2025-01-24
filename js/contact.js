@@ -28,3 +28,13 @@ function copyText(elementId) {
         console.error('Failed to copy text: ', err);
     });
 }
+
+document.getElementById('downloadLink').addEventListener('click', function() {
+    var a = document.createElement('a');
+    a.href = './Resume_2.pdf'; // 指定文件路径
+    a.download = 'MyResume.pdf'; // 指定下载文件的默认名称
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+
