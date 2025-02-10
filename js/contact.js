@@ -29,6 +29,7 @@ function copyText(elementId) {
     });
 }
 
+/*
 document.getElementById('downloadLink').addEventListener('click', function() {
     var a = document.createElement('a');
     a.href = './Resume_2.pdf'; // 指定文件路径
@@ -37,4 +38,4 @@ document.getElementById('downloadLink').addEventListener('click', function() {
     a.click();
     document.body.removeChild(a);
 });
-
+*/
